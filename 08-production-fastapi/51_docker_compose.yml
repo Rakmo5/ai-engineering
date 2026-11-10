@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/ai_db
+      - REDIS_URL=redis://redis:6379/0
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=ai_db
+  redis:
+    image: redis:7-alpine

@@ -1,0 +1,2 @@
+-- Lesson 4: PostgreSQL & pgvector Schema
+-- Practice Task: Conversation threads and message schema with vector index

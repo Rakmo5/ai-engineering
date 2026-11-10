@@ -1,0 +1,14 @@
+flowchart TD
+    User([User Request]) --> API[FastAPI Gateway]
+    API --> JobManager[Job Queue & PostgreSQL]
+    JobManager --> Orchestrator[LangGraph Orchestrator]
+    Orchestrator --> Planner[Planner Agent]
+    Planner --> Researcher[Research Agent]
+    Researcher --> MCP[MCP Tools / Web / Docs]
+    MCP --> Evidence[(Evidence Store)]
+    Evidence --> Critic[Fact-Checker & Critic]
+    Critic --> Writer[Report Synthesis]
+    Writer --> Gate{Human Approval Required?}
+    Gate -- Yes --> Human[Human Review Terminal/UI]
+    Human -- Approved --> Final[Final Cited Whitepaper]
+    Gate -- No --> Final

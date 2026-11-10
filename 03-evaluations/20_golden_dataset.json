@@ -1,0 +1,7 @@
+[
+  {
+    "question": "What is the primary role of an orchestrator in multi-agent systems?",
+    "ground_truth": "An orchestrator manages task delegation, state transitions, and enforces termination budgets.",
+    "expected_chunks": ["chunk_042", "chunk_043"]
+  }
+]

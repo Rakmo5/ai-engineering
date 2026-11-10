@@ -1,0 +1,48 @@
+<svg width="400" height="60" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .track {
+      fill: #e2e8f0;
+    }
+    .fill {
+      fill: url(#grad);
+      animation: load 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      width: 0px;
+    }
+    .text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      fill: #0f172a;
+      opacity: 0;
+      animation: fadeIn 0.5s ease-out 1s forwards;
+    }
+    @keyframes load {
+      to { width: 0.0px; }
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .track {
+        fill: #1e293b;
+        stroke: #334155;
+      }
+      .text {
+        fill: #f8fafc;
+      }
+    }
+  </style>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+  </defs>
+  
+  <text x="0" y="18" class="text" style="animation: fadeIn 0.5s ease-out forwards; opacity: 1;">AI Engineering &amp; Agents Mastery</text>
+  <text x="350" y="18" class="text">0.0%</text>
+
+  <rect x="0" y="30" width="400" height="16" rx="8" class="track" />
+  <rect x="0" y="30" height="16" rx="8" class="fill" />
+</svg>
