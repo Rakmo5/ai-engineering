@@ -273,7 +273,7 @@ for p_name in phase_order:
     stats = phase_stats.get(p_name, {'total': 0, 'completed': 0})
     p_pct = (stats['completed'] / stats['total']) * 100 if stats['total'] else 0
     indicator = "🟢 Active" if (stats['completed'] > 0 and stats['completed'] < stats['total']) else ("⚪ Not Started" if stats['completed'] == 0 else "🏆 Completed")
-    short_title = phase_titles.get(p_name, p_name).split(":")[1].strip() if ":" in phase_titles.get(p_name, p_name) else p_name
+    short_title = phase_titles.get(p_name, p_name).split(":", 1)[1].strip() if ":" in phase_titles.get(p_name, p_name) else p_name
     content += f"| **{p_name}**: {short_title} | {stats['completed']} / {stats['total']} | {p_pct:.1f}% | {indicator} |\n"
 
 content += f"""| **TOTAL** | **{completed_count} / {total_modules}** | **{pct:.1f}%** | **🧠 Engineering Grind** |

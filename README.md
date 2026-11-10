@@ -31,7 +31,7 @@ Track my interactive progress through the 11 phases of AI Engineering below:
 | **Phase 7**: Model Context Protocol (MCP) Ecosystem (Lessons 43–46) | 0 / 4 | 0.0% | ⚪ Not Started |
 | **Phase 8**: Production Engineering & System Scalability (Lessons 47–52) | 0 / 6 | 0.0% | ⚪ Not Started |
 | **Phase 9**: AI Security, Red Teaming & Responsible Autonomy (Lessons 53–56) | 0 / 4 | 0.0% | ⚪ Not Started |
-| **Phase 10**: Capstone | 0 / 4 | 0.0% | ⚪ Not Started |
+| **Phase 10**: Capstone: Production Autonomous Research & Synthesis Agent (Lessons 57–60) | 0 / 4 | 0.0% | ⚪ Not Started |
 | **TOTAL** | **0 / 60** | **0.0%** | **🧠 Engineering Grind** |
 
 > 📱 **1-Tap Interactive Mobile Checklist**: You can directly check off completed lessons on your phone anytime:  
