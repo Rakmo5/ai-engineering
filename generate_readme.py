@@ -334,6 +334,21 @@ for p_name in phase_order:
 content += """
 ---
 
+## 🚀 Top 5% Engineering Masterclass: Open-Source Models, VRAM Math & Fine-Tuning
+
+Beyond standard cloud APIs, top-tier AI Engineers master on-premise open-source inference, hardware memory budgets, fine-tuning, and high-performance data processing:
+
+| Topic & Masterclass Guide | Core Engineering Skills | Runnable Code & Resources |
+| :--- | :--- | :---: |
+| 🧮 **GPU VRAM & Quantization Calculator** | VRAM formula $(P \\times B \\times 1.2)$, KV Cache sizing, PagedAttention, AWQ vs GGUF | [`notes/vram_quantization_math.md`](./notes/vram_quantization_math.md) |
+| 🧭 **Architecture Decision Matrix** | When to use Prompting vs RAG vs Fine-Tuning vs Classical ML (XGBoost) | [`notes/rag_vs_finetuning_decision_matrix.md`](./notes/rag_vs_finetuning_decision_matrix.md) |
+| ⚡ **Local Inference with vLLM & Ollama** | Self-hosting Llama 3.1 & Qwen 2.5, OpenAI-compatible vLLM server, continuous batching | [`01-llm-engineering/local_inference_vllm_ollama.py`](./01-llm-engineering/local_inference_vllm_ollama.py) |
+| 🎯 **Fine-Tuning (PEFT / LoRA / QLoRA)** | Low-Rank Adaptation math $(\\Delta W = B \\cdot A)$, Unsloth acceleration, QLoRA NF4 | [`01-llm-engineering/finetuning_lora_unsloth.py`](./01-llm-engineering/finetuning_lora_unsloth.py) |
+| 🏎️ **High-Speed Data Ingestion (DuckDB & Polars)** | 50x faster analytical filtering over Parquet/JSONL before vector embedding generation | [`02-advanced-rag/fast_data_duckdb_polars.py`](./02-advanced-rag/fast_data_duckdb_polars.py) |
+| ☁️ **Amazon Bedrock & Enterprise Security** | Serverless foundation models (Claude 3.5 Sonnet), Knowledge Bases, Bedrock Guardrails | [`notes/amazon_bedrock_guide.md`](./notes/amazon_bedrock_guide.md) |
+
+---
+
 ## ⏱️ Suggested Weekly Routine (8–12 Hours / Week)
 
 | Activity | Hours per Week | Focus |
